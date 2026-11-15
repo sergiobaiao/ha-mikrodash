@@ -1,9 +1,8 @@
 # MikroDash
 
-1. Instale e inicie o add-on.
+1. Instale e inicie o add-on. Abra pelo painel lateral "MikroDash" (ingress) ou "Abrir interface web".
 2. Veja o log do add-on: ele mostra o **setup code** da primeira execução.
-3. Abra `http://IP-DO-HA:3081`, crie o admin com o código e adicione o roteador.
+3. Crie o admin com o código e adicione o roteador.
 
-Dados persistem em `/data` do add-on (incluídos nos backups do HA).
-Porta 13231/udp só é usada se ativar o provisionamento zero-touch.
-Config do RouterOS: veja o README do projeto.
+Dados em `/data` do add-on (entram nos backups do HA).
+Porta 3081 é acesso direto opcional; 13231/udp só para provisionamento zero-touch.
