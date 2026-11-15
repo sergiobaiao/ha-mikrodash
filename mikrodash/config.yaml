@@ -1,0 +1,20 @@
+name: MikroDash
+version: "0.8.82"
+slug: mikrodash
+description: Dashboard open-source para MikroTik RouterOS v7
+url: https://github.com/SecOps-7/MikroDash
+image: ghcr.io/secops-7/mikrodash
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: application
+boot: auto
+init: false
+ports:
+  3081/tcp: 3081
+  13231/udp: 13231
+ports_description:
+  3081/tcp: Interface web
+  13231/udp: WireGuard de provisionamento (opcional)
+webui: http://[HOST]:[PORT:3081]
