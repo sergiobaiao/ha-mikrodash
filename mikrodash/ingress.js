@@ -15,6 +15,7 @@
     } catch (e) { return u; }
   }
   // O roteador do app le location.pathname: mostra "/pagina" em vez do prefixo.
+  window.__ingressFix = fix;
   history.replaceState(history.state, '', (location.pathname.slice(P.length) || '/') + location.search + location.hash);
 
   var f = window.fetch;
